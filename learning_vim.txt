@@ -1,0 +1,123 @@
+********Exercício****
+
+const functions = requir
+Modulos de execução do vim
+Normal - esc
+Comand - :
+Insert - I(antes) ou a(depois)
+Visual - v
+Block Mode - v depois ctrl+v
+ctrl+[ -> esc
+Navegar no normal mode:
+e -> vai para o fim da próxima palavra.
+b -> volta para o começo da palavra anterior begin.
+w -> começo da praxima palavra.
+j -> desce.
+k -> sobe.
+h -> anda para esquerda. 
+l -> anda para direita.
+shift+i -> vai para o começo da linha já com o insert.
+shift+a -> vai para o final da linha já com o insert.
+shift+h -> vai para o começo do arquivo.
+l -> avança na linha que está.
+o -> insere uma linha e já vai para o modo insert.
+O -> insere uma linha abaixo e já vai para o modo insert.
+:q -> sair.
+:q! -> sair forçado.
+:e nomedo.arquivo - vai até o arquivo.
+:sp - split, divide a tela horizontalmente.
+:vs - divide a tela verticalmente.
+gg -> vai para o início do arquivo.
+G -> vai para o final do arquivo já no modo insert
+$ -> vai para o final da linha.
+0 -> vai para o começo da linha. 
+dd -> deleta a linha.
+4dd -> deleta 4 linhas.
+{ } -> navega entre espaços em branco.
+( ) -> navega entre blocos de código.
+c -> troca o conteúdo dentro de aspas ou tags e outros.
+ci" -> apaga e começa a escrever o que tem dentro das "".
+caw -> troca uma palavra inteira.
+di( -> apaga tudo que está entre os parênteses.
+u -> undo , voltar.
+ctrl + r = redo refazer.
+x -> apaga caracter.
+r -> replace . troca uma letra por outra.
+y -> yank , copiar.
+3yy -> copia 3 linhas.
+p -> paste, colar.
+/+"palavra -> find, procura palavar n e shift + n ajuda a navegar.
+. -> repete operação anterior.
+
+
+----- Do Normal Mode Para Insert Mode ------------
+
+- a Append - a frente da letra
+- i Insert - a tras da letra
+- o - Inserir abaixo
+- O - Inserir acima
+- s - Inserir apagando no começo
+- S - Inserir apagando linha inteira
+- A - No fim da linha
+- I - No começo da linha
+
+----- Do Insert Mode Para Normal Mode ------------
+- Esc(Escape)
+
+---- Navegação ----------
+- b beginning : voltar palavras
+- w word : avançar palavras
+- B beginning : voltar palavras (desconsidera special Char)
+- W word : avançar palavras  (desconsidera special Char)
+- e ending : avançar palavras (parando no fim)
+- E ending : avançar palavras (parando no fim) (desconsidera special Char)
+- g general :
+- gg : primeira linha do arquivo
+- G : ultima linha do arquivo
+- 4g : pula 4 linhas (abaixo)
+- $ : Final da linha.
+- 0 : Começo da linha.
+- Shift A : Final da linha (inserindo)
+- Shift I : Começo da linha (inserindo)
+- hjkl : esquerda, cima, baixo, direita
+- Shift + ) } ] : navegar pelos blocos de código
+
+----- Changes C,D (esperam algum evento a seguir) ---------
+
+- c : Troca e ja entra
+  cj: change below
+  cb: change beginning word
+  cc: change all current line
+  4cc: change all current 4 line
+  caw: change all word
+  C (Shift+c) : Apaga tudo daqui pra frente
+  ci(: change inside (
+  cat: change all tag
+- di" : delete in "
+- a -all | i-in | t-til | f-find forwar | F-find backward
+  -d : Delete
+  -x : delete char
+- Igual as variações d c:, mas agora excluindo o elemento
+  -r : Replace letter
+  -R : igual tecla Insert
+  -p: Put como append
+  -P: Put
+  -y: Yank
+  -u: Undo | ctrl+R : Redo
+
+
+------- Find and Search ----------
+- /
+- n : next
+- N : previous
+
+----- Numeros importa para comandos ---------
+5dd : delete 5 lines
+
+--- Visual Mode -----
+-v : enter visual mode
+Ctrl+v: Visual Block
+-Sinal maior: Identar
+
+---- dot command ---------
+.repetição
