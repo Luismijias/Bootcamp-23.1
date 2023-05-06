@@ -49,6 +49,14 @@ p -> paste, colar.
 /+"palavra -> find, procura palavar n e shift + n ajuda a navegar.
 . -> repete operação anterior.
 
+ctrl + f ->avança uma página.
+ctrl + b ->volta um página.
+
+
+
+
+
+
 
 ----- Do Normal Mode Para Insert Mode ------------
 
