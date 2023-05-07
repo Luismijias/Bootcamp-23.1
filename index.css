@@ -1,26 +1,35 @@
 * {
         margin: 0;
         padding: 0;
-	background-color: #0ab285;
+        background-color: #0ab285;
+}
+td {
+        font-size: 2rem;
+
+        background-color:#4f7f6e;
 }
 
+sup{ 
+background-color:#4f7f6e;}
+table { 
+}
 body {
         background-color: #0ab285;
         width: 100%;
         height: 100%;
         display: flex;
- 	flex-direction:column;
+        flex-direction:column;
         justify-content: center;
         align-items: center;
 }
 
 button {
-	padding:20px;
-	margin-top:2em;
+        padding:20px;
+        margin-top:2em;
 }
 
 img {
-      background-color: #0ab285;
+        background-color: #0ab285;
 }
 
 h1 {
@@ -30,7 +39,7 @@ h1 {
 }
 
 form {
-	margin-top:2rem;
+        margin-top:2rem;
 }
 
 p {
@@ -40,7 +49,7 @@ p {
 }
 
 a {
-	color:black;
-	margin:2rem;
-	font-size:2rem;
+        color:black;
+        margin:2rem;
+        font-size:2rem;
 }
