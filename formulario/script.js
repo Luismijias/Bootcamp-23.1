@@ -1,0 +1,5 @@
+const addAnimais = () => {
+ alert("Enviado!!!")
+
+}
+  
