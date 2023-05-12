@@ -6,45 +6,66 @@
   </head>
   <body>
     <header>
-      <a href="http://luismijias.bootcamp.dev.netuno.org:20180/">Home</a>
+      <div class="header__pages">
+        <div>
+          <a class="a__logo" href="http://luismijias.bootcamp.dev.netuno.org:20180/"><img class="img_logo" src="/image/sailboat_icon.png"/>Home</a>
+        </div>
+        <div>
+          <a href="http://luismijias.bootcamp.dev.netuno.org:20180/subsite/index.html">Subsite</a>
+        </div>
+        <div>
+          <a href="http://luismijias.bootcamp.dev.netuno.org:20180/extincoes/extincoes.html">Extin&ccedil;&otilde;es</a>
+        </div>
+        <div>
+          <a href="http://luismijias.bootcamp.dev.netuno.org:20180/parques-naturais/parques-naturais.html">Parques-Naturais</a>
+        </div>
+      </div>
     </header>
+
+        <h1>Formul&aacute;rio</h1>
     <main>
-      <script src="script.js"></script>
-      <h1>Formul&aacute;rio</h1>
-      <form action="mensagem-salvo.html" target="iframe-submissao">
+      <div class="image__form">
+        <script src="script.js"></script>
         <div>
-          <label>
-            Animal:
-          </label>
-          <input type="text" name="animal" id="animal"/>
+          <img src="/image/louva.png"/>
         </div>
-        <div>
-          <label>
-            Quantidade:
-          </label>
-          <input type="text" name="Quantidade"/>
-        </div>
-        <div>
-          <label>
-            Parque:
-          </label>
-          <input type="text" name="Parque"/>
-        </div>
-        <div>
-          <label>
-            Estado:
-          </label>
-          <input type="text" name="Estado"/>
-        </div>
-        <div>
-          <Input type="checkbox" name="confirma"/>Confirma?
-        </div>
-        <div>
-          <button onclick="addAnimais()">Enviar</button>
-        </div>
-      </form>
-      <iframe name="iframe-submissao"> 
-      </iframe>
+      </div>
+      <div class="form">
+        <form action="mensagem-salvo.html" target="iframe-submissao">
+          <div class="inputlabel">
+            <label>
+              Animal:
+            </label>
+            <input type="text" name="animal" id="animal"/>
+          </div>
+          <div  class="inputlabel">
+            <label>
+              Quantidade:
+            </label>
+            <input type="text" name="Quantidade"/>
+          </div>
+          <div  class="inputlabel">
+            <label>
+              Parque:
+            </label>
+            <input type="text" name="Parque"/>
+          </div>
+          <div  class="inputlabel">
+            <label>
+              Estado:
+            </label>
+            <input type="text" name="Estado"/>
+          </div>
+          <div width="500px">
+            Confirma?   <Input type="checkbox" name="confirma"/>
+          </div>
+          <div width="500px">
+            <button onclick="addAnimais()">Enviar</button>
+          </div>
+        </form>
+        <iframe name="iframe-submissao"> 
+        </iframe>
+      </div>
     </main>
     <footer>
       <h6>Bootcamp 23.1,&copy;2023.</h6>
