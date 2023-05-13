@@ -28,8 +28,6 @@ main{
  max-width: 1024px;
  margin: auto;
 }
-main div{
-}
 table {
   width: 100%;
   margin:auto;
@@ -118,9 +116,14 @@ h1 {
   body{
   }
   header{
-    padding-left: 10vw;
     height: 120px;
   }
+  .a__logo{
+    text-align: right;
+  }
+  .img_logo{
+margin-left: 10vw;
+}
   .header__pages {
     padding-right: 20vw;
   }
