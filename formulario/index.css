@@ -19,7 +19,18 @@ header{
   max-width: 1024px;
   margin: auto;
 }
+.header__pages{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1024px;
+  margin: auto;
+  text-align: right;
+}
 .header__home div{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.header__pages div{
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -31,15 +42,10 @@ main{
 }
 main div{
   display: inline-block;
-  text-align: right;
 }
-main img{
-  width: 400px;
-  height: 350px;
-}
-.main__text {
-  padding-left: 20px;
-  margin-top: 160px;
+td {
+  font-size: 2rem;
+  background-color: var(--tertiary-color);
 }
 sup{ 
   background-color: var(--tertiary-color);
@@ -50,20 +56,26 @@ body {
   height: 100%;
   text-align: center;
 }
-.img__logo{
-  text-align: left;
+img {
 }
-.img__logo img{
-  margin-top: 5px;
+.image__form div{
+
+}
+.image__form img{
+  width: 400px;
+  height: 340px;
+  border-radius: 20px;
+}
+.img_logo {
   background-color: var(--secundary-color);
   height:60px;
   width: 60px;
 }
 h1 {
+  color: var(--font-color);
+  color: var(--font-color);
   margin-top: 20px;
   margin-bottom: 40px;
-  color: var(--font-color);
-  color: var(--font-color);
 }
 form {
   display: block;
@@ -72,6 +84,7 @@ form {
 .form div{
   display: block;
   align-items: right;
+  width: 400px;
 }
 .form form div{
   display: flex;
@@ -80,6 +93,8 @@ form {
 iframe{
   width: 100%;
   margin-top: 10px;
+  height: 203px;
+  border-radius: 20px;
 }
 button{
   border-radius:10px;
@@ -104,28 +119,25 @@ a {
   margin: 5px 0px 0px 0px;
   text-align: left;
 }
-.header__home {
+.header__pages a{
   font-size: 1.4rem;
-  height: 100%;
 }
+.header__home a{
+  font-size: 1.4rem;
+}
+
+
 footer{
   position: absolute;
   bottom: 0;
   width: 100%;
   line-height: 2.5rem;
   text-align: center;
-  margin: auto;
 }
+
+
 footer h6{
   margin: 0 auto;
-  font-size: 1rem;
-}
-footer a img{
-  width: 40px;
-  height: 40px;
-  margin-right: 10px; 
-}
-footer div{
 }
 
 
@@ -142,3 +154,4 @@ footer div{
 
 
 
+/*adfsfa/*
