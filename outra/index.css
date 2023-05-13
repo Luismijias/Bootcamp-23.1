@@ -124,12 +124,63 @@ footer a img{
   width: 40px;
   height: 40px;
   margin-right: 10px; 
+  border-radius: 10px;
 }
 footer div{
 }
 
 
 
+@media (max-width: 1024px) {
+header div a{
+  font-size: 0.7rem;
+}
+main{
+  display: grid;
+  width: 100vw;
+  margin: auto;
+}
+main div{
+  display: flex;
+  text-align: left;
+}
+.main__img {
+  text-align: center;
+  width: 80vw;
+  margin: auto;
+}
+.main__text{
+  margin-top: 0;
+  display:grid;
+  margin-bottom: 100px;
+}
+main img{
+  margin: auto;
+  width: 400px;
+  height: 350px;
+}
+footer{
+  position: relative;
+  bottom: 0;
+  width: 90%;
+  text-align: center;
+}
+footer div {
+  position: flex;
+}
+footer div div a img{
+  width: 30px;
+  height: 30px;
+}
+.footer__icon{
+}
+footer div div h6 {
+  font-size: 0.6rem;
+}
+}
+@media (min-width: 922px) {}
+@media (min-width: 1200px) {}
+@media (min-width: 1400px) {}
 
 
 

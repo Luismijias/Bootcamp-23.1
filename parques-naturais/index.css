@@ -25,13 +25,14 @@ header{
   margin-bottom: auto;
 }
 main{
-  width: 1024px;
-  margin: auto;
+ max-width: 1024px;
+ margin: auto;
 }
 main div{
 }
 table {
   width: 100%;
+  margin:auto;
 }
 td {
   font-size: 2rem;
@@ -107,17 +108,45 @@ footer h6{
   margin: 0 auto;
 }
 
+@media (max-width: 1024px) {
+h1 {
+    margin-left: 20vw;
+    font-size: 3rem;
+    margin: auto;
+    margin-top: 30px;
+  }
+  body{
+  }
+  header{
+    padding-left: 10vw;
+    height: 120px;
+  }
+  .header__pages {
+    padding-right: 20vw;
+  }
+  main table{
+    width: 81vw;
+  }
+  header div div a{
+    font-weight: bold;
+  }
+  .header__pages a{
+    font-size: 2rem;
+  }
+main div table {
+  width: 100%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+}
+}
 
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 780px) {
+.header__pages a {
+  font-size: 1.5rem;
+}
+}
 
 
 
