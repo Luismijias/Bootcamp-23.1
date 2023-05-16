@@ -1,0 +1,26 @@
+1-find | grep "nome do arquivo"
+2-find | grep ssh_config | tail
+3-cat ssh_config ou cat ssh_config | tail -n 2
+4-cat ssh_config | grep -in "auth"
+
+Parte 2
+1-find -lha --> vim .bashrc --> atalho pra ir para o final da linha
+
+Parte 3
+bg
+jobs
+fg %1
+
+
+Parte 4
+htop
+
+
+Gravar tela no linux com gforce
+
+
+comando avançado para analisar:
+cat $(find / -name ssh_config 2> /dev/null) | grep -i "auth"
+
+
+

@@ -1,0 +1,3 @@
+-> a resoluçao do exercício dois parte do comando:ln -s webroot subsite
+->ln -s ~/class/3-HTML\:Introdução_na_web/subsite ~/webroot
+

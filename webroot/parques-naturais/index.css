@@ -13,33 +13,28 @@ header{
   width: 100vw;
   height: 93.6px;
 }
-.header__home{
+.header__pages{
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   max-width: 1024px;
   margin: auto;
+  text-align: right;
 }
-.header__home div{
+.header__pages div{
   margin-top: auto;
   margin-bottom: auto;
 }
 main{
-  display: flex;
-  width: 1024px;
-  margin: auto;
-  justify-content: space-between;
+ max-width: 1024px;
+ margin: auto;
 }
-main div{
-  display: inline-block;
-  text-align: right;
+table {
+  width: 100%;
+  margin:auto;
 }
-main img{
-  width: 400px;
-  height: 350px;
-}
-.main__text {
-  padding-left: 20px;
-  margin-top: 160px;
+td {
+  font-size: 2rem;
+  background-color: var(--tertiary-color);
 }
 sup{ 
   background-color: var(--tertiary-color);
@@ -50,20 +45,17 @@ body {
   height: 100%;
   text-align: center;
 }
-.img__logo{
-  text-align: left;
+img {
 }
-.img__logo img{
-  margin-top: 5px;
+.img__logo {
   background-color: var(--secundary-color);
   height:60px;
   width: 60px;
 }
 h1 {
-  margin-top: 20px;
-  margin-bottom: 40px;
   color: var(--font-color);
   color: var(--font-color);
+  margin: 20px;
 }
 form {
   display: block;
@@ -76,10 +68,6 @@ form {
 .form form div{
   display: flex;
   justify-content: space-between;
-}
-iframe{
-  width: 100%;
-  margin-top: 10px;
 }
 button{
   border-radius:10px;
@@ -104,9 +92,8 @@ a {
   margin: 5px 0px 0px 0px;
   text-align: left;
 }
-.header__home {
+.header__pages a{
   font-size: 1.4rem;
-  height: 100%;
 }
 footer{
   position: absolute;
@@ -114,82 +101,59 @@ footer{
   width: 100%;
   line-height: 2.5rem;
   text-align: center;
-  margin: auto;
 }
 footer h6{
   margin: 0 auto;
-  font-size: 1rem;
 }
-footer a img{
-  width: 40px;
-  height: 40px;
-  margin-right: 10px; 
-  border-radius: 10px;
-}
-footer div{
-}
-
-
 
 @media (max-width: 1024px) {
-header div a{
-  font-size: 0.7rem;
+h1 {
+    margin-left: 20vw;
+    font-size: 3rem;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  body{
+  }
+  header{
+    height: 230px;
+  }
+  .a__logo{
+    text-align: center;
+    margin-left: 5vw;
+    margin-bottom: 30px;
+  }
+  .img__logo{
+margin-left: 6vw;
 }
-main{
-  display: grid;
-  width: 100vw;
-  margin: auto;
+  .header__pages {
+    padding-right: 10vw;
+  }
+  main table{
+    width: 81vw;
+  }
+  header div div a{
+    font-weight: bold;
+  }
+  .header__pages a{
+    font-size: 2rem;
+    margin-top: 60px;
+  }
+main div table {
+  width: 100%;
 }
-main div{
-  display: flex;
-  text-align: left;
-}
-.main__img {
-  text-align: center;
-  width: 80vw;
-  margin: auto;
-}
-.main__text{
-  margin-top: 0;
-  display:grid;
-  margin-bottom: 100px;
-}
-main img{
-  margin: auto;
-  width: 400px;
-  height: 350px;
-}
-footer{
-  position: relative;
+footer {
+  position: fixed;
   bottom: 0;
-  width: 90%;
-  text-align: center;
-}
-footer div {
-  position: flex;
-}
-footer div div a img{
-  width: 30px;
-  height: 30px;
-}
-.footer__icon{
-}
-footer div div h6 {
-  font-size: 0.6rem;
 }
 }
-@media (min-width: 922px) {}
-@media (min-width: 1200px) {}
-@media (min-width: 1400px) {}
 
-
-
-
-
-
-
-
-
+@media (max-width: 780px) {
+.header__pages a {
+  font-size: 1.5rem;
+}
+}
 
 
 

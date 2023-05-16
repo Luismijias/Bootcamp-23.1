@@ -13,61 +13,60 @@ header{
   width: 100vw;
   height: 93.6px;
 }
-.header__home{
+.header__pages{
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   max-width: 1024px;
   margin: auto;
+  text-align: right;
+  margin-bottom: auto;
 }
-.header__home div{
+.header__pages div {
   margin-top: auto;
   margin-bottom: auto;
 }
 main{
   display: flex;
-  width: 1024px;
+  max-width: 1024px;
   margin: auto;
   justify-content: space-between;
 }
 main div{
   display: inline-block;
-  text-align: right;
 }
-main img{
+main div img{
   width: 400px;
-  height: 350px;
+  height: 300px;
+  border-radius: 20px;
 }
-.main__text {
-  padding-left: 20px;
-  margin-top: 160px;
+table {
+  height: 300px;
+}
+table tr{
+  border-radius: 20px;
+}
+td {
+  border-radius: 20px;
+  font-size: 2rem;
+  background-color: var(--tertiary-color);
 }
 sup{ 
   background-color: var(--tertiary-color);
 }
 body {
   background-color: var(--primary-color);
-  width: 100%;
-  height: 100%;
   text-align: center;
 }
-.img__logo{
-  text-align: left;
-}
-.img__logo img{
-  margin-top: 5px;
+.img_logo {
   background-color: var(--secundary-color);
   height:60px;
   width: 60px;
 }
 h1 {
+  color: var(--font-color);
+  color: var(--font-color);
   margin-top: 20px;
-  margin-bottom: 40px;
-  color: var(--font-color);
-  color: var(--font-color);
-}
-form {
-  display: block;
-  position: relative;
+  margin-bottom: 20px;
 }
 .form div{
   display: block;
@@ -76,15 +75,6 @@ form {
 .form form div{
   display: flex;
   justify-content: space-between;
-}
-iframe{
-  width: 100%;
-  margin-top: 10px;
-}
-button{
-  border-radius:10px;
-  width:60px;
-  height:25px;
 }
 p {
   text-align: center;
@@ -104,9 +94,8 @@ a {
   margin: 5px 0px 0px 0px;
   text-align: left;
 }
-.header__home {
+.header__pages a{
   font-size: 1.4rem;
-  height: 100%;
 }
 footer{
   position: absolute;
@@ -114,73 +103,60 @@ footer{
   width: 100%;
   line-height: 2.5rem;
   text-align: center;
-  margin: auto;
 }
 footer h6{
   margin: 0 auto;
-  font-size: 1rem;
 }
-footer a img{
-  width: 40px;
-  height: 40px;
-  margin-right: 10px; 
-  border-radius: 10px;
-}
-footer div{
-}
-
-
-
 @media (max-width: 1024px) {
-header div a{
-  font-size: 0.7rem;
-}
-main{
-  display: grid;
-  width: 100vw;
-  margin: auto;
-}
-main div{
-  display: flex;
-  text-align: left;
-}
-.main__img {
-  text-align: center;
-  width: 80vw;
-  margin: auto;
-}
-.main__text{
-  margin-top: 0;
-  display:grid;
-  margin-bottom: 100px;
-}
-main img{
-  margin: auto;
-  width: 400px;
-  height: 350px;
-}
-footer{
-  position: relative;
+h1 {
+    margin-left: 20vw;
+    font-size: 3rem;
+    margin: auto;
+    margin-top: 30px;
+  }
+  header{
+    padding-left: 10vw;
+    display: table-cell;
+    height: 230px;
+  }
+  header div div a{
+    font-weight: bold;
+  }
+  .header__pages {
+    padding-right: 10vw;
+    margin-top: 100px;
+  }
+  .a__logo{
+    margin: -60px 0px 0px 0px;
+  }
+  main{
+    justify-content: center;
+    display: grid;
+  }
+  main div table {
+    width: 80vw;
+  }
+  main div img {
+    margin-top: 20px;
+    width: 80vw;
+    height: 50vw;
+  }
+  .header__pages a{
+    font-size: 2rem;
+  }
+footer {
+  position: fixed;
   bottom: 0;
-  width: 90%;
-  text-align: center;
-}
-footer div {
-  position: flex;
-}
-footer div div a img{
-  width: 30px;
-  height: 30px;
-}
-.footer__icon{
-}
-footer div div h6 {
-  font-size: 0.6rem;
 }
 }
-@media (min-width: 922px) {}
-@media (min-width: 1200px) {}
-@media (min-width: 1400px) {}
+
+@media (max-width: 780px) {
+.header__pages a {
+  font-size: 1.5rem;
+}
+}
+
+
 
 
 

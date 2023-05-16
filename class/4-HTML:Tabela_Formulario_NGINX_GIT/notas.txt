@@ -1,0 +1,12 @@
+1- para identar todas o vim é usar-> esc -> =G
+2- comando css colspan e rowspan ex: <td rowspan="2">
+3- comando do vim para desfazer -- esc -> u
+4- criar novo arquivo -- esc -> :enew
+5- q:
+6- trocar o tab por 2 espaços
+7- aprender a copiar um bloco de código
+8- navega até o arquivo ->:e nome-do-arquivo
+
+ 
+ 
+ 

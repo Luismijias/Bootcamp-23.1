@@ -1,0 +1,23 @@
+->clicando na tela na opção view Page Source ou view-source:+site no browser -> visualiza o código fonte da página.
+->Dica: conhecer o site https://www.w3schools.com/  no próprio site podemos brincar com as tags e
+fazer testes.
+->Regra básica, abrir uma tag tem que fechar.
+->Exemplo se vc colocar <img src="lik da imagem"/>  esta irá aparecer.
+->Identação é como o códiog é organizado.
+->DOM: Document Object Model
+->A estrutura básica de uma página web seria da seguinte forma:
+<html>
+	<head>
+		<link/>
+		<title/>
+		<meta/>
+	<head/>
+	<body>
+		<header/>
+		<main/>
+		<footer/>
+	<body/>
+<html/>
+
+
+>

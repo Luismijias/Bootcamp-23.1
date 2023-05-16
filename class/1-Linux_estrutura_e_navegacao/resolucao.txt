@@ -1,0 +1,50 @@
+ Parte 1
+
+1. Descubra onde ficam as pastas principais dos usuários do sistema.
+ R: pwd
+
+2. Copiar o arquivo cron para a pasta principal do teu usuário, este arquivo de cron está em algum lugar dentro da pasta etc e init.d.
+ R: cd /etc/init.d --> cp cron ~/exercicios/1-Linux_estrurura_e_navegacao --> cd ~/exercicios/1-Linux_estrurura_e_navegacao --> ls
+
+3. Entenda e analise as diferenças entre pasta e arquivos com os caminhos /var/log e /usr/share/menu/bash.
+ R: cd /var/log --> ls -rato --> onde os arquivos 
+
+4. O arquivo executável do comando ls fica em qual pasta?
+        /usr/bin
+        /sbin
+        /bin
+        /usr/sbin
+ R: está no /bin comandos ultilizados: --> cd / --> find -name ls
+Parte 2
+
+    Remova o arquivo cron copiado anteriormente, que está na pasta do teu usuário.
+ R: rm cron   
+    Crie a seguinte estrutura dentro da tua pasta de usuário:
+    animais/especies
+ R:mkdir animais --> cd animais -->mkdir especies --> pwd
+    Crie alguns arquivos de texto na pasta na pasta animais/especies com o vim.
+ R:vim macaco.txt -->vim jacutinga.txt -->vim encontro.txt -->Obs:para salvar no vim é necessário apertar tecla esc depois :wq
+
+Parte 3
+
+    Crie algumas pastas com o nome de algumas espécies dentro do caminho animais/especies, e dentro destas
+       pastas crie um arquivo de texto chamado info.txt que deve conter informações adicionais sobre a espécie, como nome científico,
+       família, etc.
+ R:Criada as pastas ultilizando o comando mkdir e depois o comando touch para criar o arquivo info.txt e para edita-lo ultilizei o vim.   
+    Crie uma pasta com o nome de cada um dos participantes, dentro desta pasta deverá ter outra pasta com o sobrenome, sendo que dentro
+       deverá ter o nome dos principais passatempos que cada um tem.
+ R:Novamente ultizando o comando mkdir para criar as pastar e o comando touch ou vim.
+    Crie uma estrutura com pelo menos 5 níveis de pastas, acrescente pelo menos 3 arquivos e remova a pasta inicial recursivamente.
+ R:Para criar as pastas pedidadas no exercício novamente foram ultilizados os comandos mkdir , touch, vim. e para apaga-las o comando-->  rm -r
+
+
+
+
+
+
+
+
+
+
+
+

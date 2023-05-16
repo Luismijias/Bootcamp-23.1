@@ -13,6 +13,12 @@ header{
   width: 100vw;
   height: 93.6px;
 }
+.header__home{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  max-width: 1024px;
+  margin: auto;
+}
 .header__pages{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -20,13 +26,17 @@ header{
   margin: auto;
   text-align: right;
 }
+.header__home div{
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .header__pages div{
   margin-top: auto;
   margin-bottom: auto;
 }
 main{
   display: flex;
-  max-width: 1024px;
+  width: 1024px;
   margin: auto;
   justify-content: space-between;
 }
@@ -46,10 +56,14 @@ body {
   height: 100%;
   text-align: center;
 }
+img {
+}
+.image__form div{
+
+}
 .image__form img{
-  width: 400px;
-  height: 340px;
-  border-radius: 20px;
+  width: 200px;
+  height: 200px;
 }
 .img_logo {
   background-color: var(--secundary-color);
@@ -59,8 +73,6 @@ body {
 h1 {
   color: var(--font-color);
   color: var(--font-color);
-  margin-top: 20px;
-  margin-bottom: 40px;
 }
 form {
   display: block;
@@ -69,7 +81,6 @@ form {
 .form div{
   display: block;
   align-items: right;
-  width: 400px;
 }
 .form form div{
   display: flex;
@@ -78,8 +89,6 @@ form {
 iframe{
   width: 100%;
   margin-top: 10px;
-  height: 203px;
-  border-radius: 20px;
 }
 button{
   border-radius:10px;
@@ -107,6 +116,11 @@ a {
 .header__pages a{
   font-size: 1.4rem;
 }
+.header__home a{
+  font-size: 1.4rem;
+}
+
+
 footer{
   position: absolute;
   bottom: 0;
@@ -114,12 +128,15 @@ footer{
   line-height: 2.5rem;
   text-align: center;
 }
+
+
 footer h6{
   margin: 0 auto;
 }
 
+
 @media (max-width: 1024px) {
-  h1 {
+h1 {
     margin-left: 20vw;
     font-size: 3rem;
     margin: auto;
@@ -127,49 +144,46 @@ footer h6{
   }
   header{
     padding-left: 10vw;
-    height: 120px;
+    display: table-cell;
+    height: 230px;
   }
   header div div a{
     font-weight: bold;
   }
   .header__pages {
-    padding-right: 20vw;
+    padding-right: 10vw;
+    margin-top: 100px;
+  }
+  .a__logo{
+    margin: -60px 0px 0px 0px;
   }
   main{
     justify-content: center;
     display: grid;
   }
-  .form div{
+  main div table {
     width: 80vw;
   }
-  .form iframe {
-    width: 80vw;
-  }
-  main div div img {
+  main div img {
     margin-top: 20px;
     width: 80vw;
+    height: 50vw;
   }
-  .image__form img {
-  width: 80vw;
-  height: 70vw;
-  border-radius: 20px;
-}
   .header__pages a{
     font-size: 2rem;
   }
-  button {
-    margin-bottom: 30px;
-  }
-  footer {
-    position: relative;
-    bottom: 0;
-  }
+footer {
+  position: fixed;
+  bottom: 0;
+}
 }
 
 @media (max-width: 780px) {
-  .header__pages a {
-    font-size: 1.5rem;
-  }
+.header__pages a {
+  font-size: 1.5rem;
+}
+}
+
 
 
 

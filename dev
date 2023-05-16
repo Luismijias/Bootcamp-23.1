@@ -1,0 +1,98 @@
+#!/bin/bash
+                    
+echo "        ************************************************************ "
+echo "        **                 ~;                                     ** "       
+echo "        ************************************************************ "  
+echo "        **                ,/|\,                                   ** "   
+echo "        **               ,/' |\ \,                                ** "
+echo "        **              ,/'   | |  \                              ** "
+echo "        **             ,/'     | |   |                            ** "
+echo "        **           ,/'       |/    |                            ** "
+echo "        **         ,/__________|-----' ,                          ** "
+echo "        **       ___.....-----''-----/                            ** " 
+echo "        **        \  Nino_Script    /                             ** "
+echo "        **   ~~-~^~^~~'~~^^~^~-'^~^~^'~-~^~^                      ** "
+echo "        **   ~-^'~^-~^~-^~^'^~^-^~^'^~^-~^                        ** "
+echo "        **           [0]                                          ** "
+echo "        **           [1] Linux:Estrutura e Navegação             ** "
+echo "        **           [2] Linux:Utilização Básica                 ** "
+echo "        **           [3] HTML:Introdução na Web                   ** "               
+echo "        **           [4] HTML:Tabela,Formulário,NGINX e GIT       ** "
+echo "        **         ► [5] fullstack                                ** "
+echo "        **           [6]                                          ** "
+echo "        **           [7]                                          ** "
+echo "        **           [8]                                          ** "
+echo "        **           [9]                                          ** "
+echo "        **          [10]                                          ** "
+echo "        **          [11]                                          ** "
+echo "        **          [12]                                          ** "
+echo "        **          [13]                                          ** "
+echo "        **          [14] Commit All                               ** "
+echo "        **                                                        ** "
+echo "        **      CTRL + C ==>SAIR                                  ** "
+echo "        **                                                        ** "
+echo "        *************************************************************" 
+echo "        **     Good job!!                                         ** "
+echo "        ************************************************************ "
+echo "        ************************************************************ "
+                    
+echo Digite o numero do projeto:                    
+read numero
+if     [ $numero == "0" ] 
+then 
+    echo "Atenção no Cluar sou colaborador!!!"
+elif [ $numero == "1" ] 
+then
+    cd class
+    cd 1-Linux_estrutura_e_navegacao
+    ls -rato    
+elif [ $numero == "2" ] 
+then
+    cd class/2-Linux_utilizacao_basica
+elif [ $numero == "3" ]
+then 
+    cd class/3-HTML:Introdução_na_web
+elif [ $numero == "4" ]
+then
+    cd class/4-HTML:Tabela_Formulario_NGINX_GIT
+elif [ $numero == "5" ] 
+then
+    echo "Ótimo voce escolheu fullstack"
+elif [ $numero == "6" ]
+then
+    cd class   	
+elif [ $numero == "7" ]  
+then
+    echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
+    cd ~/class/
+    elif [ $numero == "8" ] 
+then
+    echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
+elif [ $numero == "9" ]
+then 
+    echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
+elif [ $numero == "10" ]
+then
+    echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
+elif [ $numero == "11" ] 
+then
+    echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"   
+elif [ $numero == "12" ]
+then 
+    echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
+elif [ $numero == "13" ]
+then
+    echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
+elif [ $numero == "14" ] 
+then
+   git add .
+   git commit -m "Automatic commit"
+   git push
+   git status
+else
+ echo "Comando inválido :-\.Digite o número de um dos projetos acima ;-)."
+fi
+
+#depois descobrir porque não consigo executar o comando CD
+
+

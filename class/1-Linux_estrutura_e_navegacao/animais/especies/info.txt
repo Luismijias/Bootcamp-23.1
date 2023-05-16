@@ -1,0 +1,29 @@
+1-Tigre (Panthera tigris)
+
+    Família: Felidae
+    Ocorrência: Ásia (subespécies em diferentes regiões)
+    Hábitos alimentares: Carnívoro, caça principalmente cervos e ungulados.
+
+2-Elefante africano (Loxodonta africana)
+
+    Família: Elephantidae
+    Ocorrência: África Subsaariana
+    Hábitos alimentares: Herbívoro, se alimenta de folhas, cascas, galhos e frutas.
+
+3-Baleia-jubarte (Megaptera novaeangliae)
+
+    Família: Balaenopteridae
+    Ocorrência: Oceanos de todo o mundo
+    Hábitos alimentares: Alimenta-se de pequenos crustáceos, plâncton e peixes.
+
+4-Chimpanzé (Pan troglodytes)
+
+    Família: Hominidae
+    Ocorrência: Florestas da África Central e Ocidental
+    Hábitos alimentares: Onívoro, se alimenta de frutas, folhas, insetos e pequenos vertebrados.
+
+5-Leopardo (Panthera pardus)
+
+    Família: Felidae
+    Ocorrência: África e Ásia
+    Hábitos alimentares: Carnívoro, caça uma variedade de presas, incluindo antílopes e macacos.
