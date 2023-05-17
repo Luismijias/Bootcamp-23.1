@@ -1,0 +1,56 @@
+@import "_variabless.css";
+
+header{
+  background-color: var(--secundary-color);
+  width: 100vw;
+  height: 93.6px;
+}
+.header__home{
+  display:grid;
+  grid-template-columns: 1fr auto;
+  max-width: 1024px;
+  margin: auto;
+  font-size: 1.4rem;
+  height: 100%;
+}
+.header__home div{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.a__logo {
+  font-size: 20px;
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+  grid-gap: 2px 0px;
+  margin: 5px 0px 0px 0px;
+  text-align: left;
+}
+.img__logo{
+  text-align: left;
+}
+.img__logo img{
+  margin-top: 5px;
+  background-color: var(--secundary-color);
+  height:60px;
+  width: 60px;
+}
+.header__home {
+}
+@media (max-width: var(--site_max-width)) {
+  header{
+    margin-right: 3vw;
+  }
+  header div a{
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  .header__home {
+    margin-right: 5vw;
+    margin-left: 3vw;
+  }
+  .img__logo {
+    text-align: right;
+  }
+ 
+}

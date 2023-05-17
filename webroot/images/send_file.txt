@@ -1,0 +1,4 @@
+#caminho reverso do servidor para a maquina :scp -P 20122 luismijias@135.181.217.178:~/.ssh/id_ed25519 id_ed25519
+
+
+Da maquina para o servidor--> scp -P 20122 seu_arquivo.png luismijias@135.181.217.178:~/webroot/images

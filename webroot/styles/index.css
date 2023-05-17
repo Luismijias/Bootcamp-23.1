@@ -15,7 +15,7 @@ header{
 }
 .header__home{
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr auto;
   max-width: 1024px;
   margin: auto;
 }

@@ -1,0 +1,13 @@
+:root{
+  --primary-color: #0ab285;
+  --secundary-color: #0c8e69;
+  --tertiary-color: #4f7f6e;
+  --font-color: #000000;
+
+  --site-max-width: 1024px;
+  --site-width: 100%;
+  
+  --logo-width: 60px;
+
+  --footer-icon-width: 40px;
+}

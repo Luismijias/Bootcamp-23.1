@@ -1,0 +1,49 @@
+@import "_variables.css";
+
+main{
+  display: flex;
+  width: 1024px;
+  margin: auto;
+  justify-content: space-between;
+}
+main div{
+  display: inline-block;
+  text-align: right;
+}
+main img{
+  width: 400px;
+  height: 350px;
+}
+.main__text {
+  padding-left: 20px;
+  margin-top: 160px;
+}
+
+@media (max-width: var(--site-max-width) {
+ main{
+    display: grid;
+    width: 100vw;
+    margin: auto;
+  }
+  main div{
+    display: flex;
+    text-align: center;
+  }
+  .main__img {
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+  }
+  .main__text{
+    margin-top: 0;
+    display:grid;
+    margin-bottom: 100px;
+    margin-right: 5vw;
+  }
+  main img{
+    margin: auto;
+    width: 400px;
+    height: 350px;
+  }
+
+}

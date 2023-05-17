@@ -1,0 +1,43 @@
+@import "_variables.css";
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 2.5rem;
+  text-align: center;
+  margin: auto;
+}
+footer h6{
+  margin: 0 auto;
+  font-size: 1rem;
+}
+footer a img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px; 
+  border-radius: 10px;
+}
+footer div{
+}
+
+@media (max-width: var(--site-max-width)) {
+  footer{
+    position: relative;
+    bottom: 0;
+    width: 90%;
+    text-align: center;
+  }
+  footer div {
+    position: flex;
+  }
+  footer div div a img{
+    width: 30px;
+    height: 30px;
+  }
+  .footer__icon{
+  }
+  footer div div h6 {
+    font-size: 0.6rem;
+  }
+}
+
