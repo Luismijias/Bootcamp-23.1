@@ -2,7 +2,11 @@
   --primary-color: #0ab285;
   --secundary-color: #0c8e69;
   --tertiary-color: #4f7f6e;
-  --font-color: #000000;
+  --standard-color: #000000;
+  --standard-color-1: #FFFFFF;
+  
+  --text-color: var(--standard-color);
+  --title-color: #0d513e;
 
   --site-max-width: 1024px;
   --site-width: 100%;

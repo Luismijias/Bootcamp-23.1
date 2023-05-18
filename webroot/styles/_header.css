@@ -1,56 +1,60 @@
-@import "_variabless.css";
+header {
+  background-color: var(--secundary-color);
+  color: var(--standard-color-1);
+  padding: 20px;
+  position: fixed;
+  width: var(--site-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-header{
-  background-color: var(--secundary-color);
-  width: 100vw;
-  height: 93.6px;
-}
-.header__home{
-  display:grid;
-  grid-template-columns: 1fr auto;
-  max-width: 1024px;
-  margin: auto;
-  font-size: 1.4rem;
-  height: 100%;
-}
-.header__home div{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.a__logo {
-  font-size: 20px;
-  display: grid;
-  grid-column: 1;
-  grid-row: 2;
-  grid-gap: 2px 0px;
-  margin: 5px 0px 0px 0px;
-  text-align: left;
-}
-.img__logo{
-  text-align: left;
-}
-.img__logo img{
-  margin-top: 5px;
-  background-color: var(--secundary-color);
-  height:60px;
-  width: 60px;
-}
-.header__home {
-}
-@media (max-width: var(--site_max-width)) {
-  header{
-    margin-right: 3vw;
+@media (min-width: 400px) and (max-width: 800px) {
+  header {
+    background-color: red;
   }
-  header div a{
-    font-size: 0.7rem;
-    font-weight: bold;
-  }
-  .header__home {
-    margin-right: 5vw;
-    margin-left: 3vw;
-  }
-  .img__logo {
-    text-align: right;
-  }
- 
 }
+
+.logo {
+  margin-right: auto;
+}
+
+.logo a img {
+  width: var(--logo-width);
+}
+
+nav {
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul li a.active {
+  background-color: var(--tertiary-color);
+  box-shadow: 0 0 5px var(--text-color);
+  color: var(--standard-color);
+}
+
+nav ul li a:hover {
+  transition: 0.5s ease-in;
+  color: var(--standard-color);
+  background-color: var(--primary-color);
+  box-shadow: 0 0 10px 5px var(--text-color);
+}
+
