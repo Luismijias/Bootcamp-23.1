@@ -25,7 +25,7 @@ echo "        **           [8]                                          ** "
 echo "        **           [9]                                          ** "
 echo "        **          [10]                                          ** "
 echo "        **          [11]                                          ** "
-echo "        **          [12]                                          ** "
+echo "        **          [12] Base de dados                            ** "
 echo "        **          [13]                                          ** "
 echo "        **          [14] Commit All                               ** "
 echo "        **                                                        ** "
@@ -79,6 +79,7 @@ then
     echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"   
 elif [ $numero == "12" ]
 then 
+    psql -U luismijias -W -h localhost luismijias_db
     echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
 elif [ $numero == "13" ]
 then
