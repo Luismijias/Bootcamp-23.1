@@ -1,0 +1,39 @@
+form > div {
+  margin-bottom: 20px;
+}
+
+form > div > label {
+  display: block;
+}
+
+form > div > div {
+  margin-top: 5px;
+}
+
+form input, form textarea {
+  border: 2px solid var(--standard-color);
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 250px;
+  background-color: var(--standard-color-1);
+  border-radius: 15px;
+}
+
+form button {
+  color: var(--standard-color-1);
+  border: none;
+  background-color: var(--tertiary-color);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+form button:hover {
+  transition: 0.5s ease-in;
+  color: var(--standard-color-1);
+  background-color: var(--standard-color);
+  box-shadow: 0 0 10px 5px var(--tertiary-color);
+}
+
+
