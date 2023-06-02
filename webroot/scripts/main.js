@@ -7,4 +7,3 @@ console.error('Aconteceu um erro!!!'); */
 logo.style.border = '2px solid yellow'; */
 
 
-
