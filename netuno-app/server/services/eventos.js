@@ -11,10 +11,19 @@ SELECT
 _out.println (`
 <style>
   .tabela-eventos__estilo--funk {
-   background-color: red;
+   background-color: #ff6e00;
   }
   .tabela-eventos__estilo--samba {
-   background-color: yellow;
+   background-color: #777244;
+  }
+  .tabela-eventos__estilo--forro {
+   background-color: #00e5ff;
+  }
+  .tabela-eventos__estilo--eletronica {
+   background-color: #9e8686;
+  }
+  .tabela-eventos__estilo--rap {
+   background-color: #63a045;
   }
 </style>
 `)
@@ -40,6 +49,18 @@ for (const dbEvento of dbEventos) {
   else if (dbEvento.getString('categoria_nome') == 'Samba') {
     classesCSS = 'tabela-eventos__estilo--samba'
   }
+  else if (dbEvento.getString('categoria_nome') == 'Forró') {
+    classesCSS = 'tabela-eventos__estilo--forro'
+  }
+  else if (dbEvento.getString('categoria_nome') == 'Eletrônica') {
+    classesCSS = 'tabela-eventos__estilo--eletronica'
+  }
+  else if (dbEvento.getString('categoria_nome') == 'Rap') {
+    classesCSS = 'tabela-eventos__estilo--rap'
+  }
+/*  else if (dbEvento.getString('evento_data') == "2024-07-22" ) {
+    classesCSS = 'tabela-eventos__proximo-evento'
+  } */
   
   _out.println (`
   <tr class="${classesCSS}">
