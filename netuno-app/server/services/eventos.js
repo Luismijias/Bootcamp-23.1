@@ -1,4 +1,3 @@
-_out.println('<h1>Eventos</h1>')
 const dbEventos = _db.query(`
 SELECT
   evento.nome AS "evento_nome",
@@ -9,11 +8,14 @@ SELECT
     INNER JOIN categoria ON evento.categoria_id = categoria.id
     `)
 
+const eventos = _val.list()
+
 for (const dbEvento of dbEventos) {
-  dbEvento.getString('evento_nome')
-  dbEvento.getString('evento_data')
-  dbEvento.getString('evento_hora')
-  dbEvento.getString('categoria_nome')
+ eventos.add(
+   _val.map()
+   .set('evento',dbEvento.getString('evento_nome'))
+   .set('categoria',dbEvento.getString('categoria_nome'))
+ )
 }
 
-
+_out.json (eventos)
