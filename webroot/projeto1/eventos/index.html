@@ -24,41 +24,32 @@
       <section>
         <div>
           <h1>Eventos</h1>
-          <p>Entrarei em contato assim que possível.</p>
         </div>
       </section>
       <section>
-        <div>
-          <form>
-            <div>
-              <label>Company</label>
-              <input type="text" />
-            </div>
-            <div>
-              <label>Office</label>
-              <input type="text" />
-            </div>
-            <div>
-              <label>Name</label>
-              <input type="text" />
-            </div>
-            <div>
-              <label>E-mail</label>
-              <div>
-                <input type="text" />
-              </div>
-            </div>
-            <div >
-              <label>Message</label>
-              <div>
-                <textarea rows="5"></textarea>
-              </div>
-            </div>
-            <div>
-              <button>Send</button>
-            </div>
-          </form>
-        </div>
+        <table class="tabela-eventos">
+          <thead>
+            <tr>
+              <th>Evento</th>
+              <th>Data</th>
+              <th>Hora</th>
+              <th>Estilo</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-produtos-body">
+          </tbody>
+        </table>
+        <script>
+          const http = new XMLHttpRequest();
+          const url = 'http://luismijias.bootcamp.dev.netuno.org:20190/services/eventos';
+          http.onreadystatechange = function() {
+            if (this.readyState == 4) {
+          console.log('Foi no BACKEND e VOLTOU');
+            }
+          };
+          http.open("GET", url, true);
+http.send();
+        </script>
       </section>
     </main>
     <footer>
