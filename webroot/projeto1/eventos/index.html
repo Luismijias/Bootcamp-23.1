@@ -5,6 +5,7 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1"/>
     <link rel="stylesheet/less" href="../../styles/root.less"/>
     <script src="../../scripts/less.min.js" type="text/javascript"></script>
+    <script src="../../scripts/main.js"></script>
   </head>
   <body>
     <header>
@@ -30,7 +31,7 @@
         <table class="tabela-eventos">
           <thead>
             <tr>
-              <th>Evento</th>
+              <th>Nome</th>
               <th>Data</th>
               <th>Hora</th>
               <th>Estilo</th>
@@ -39,20 +40,17 @@
           <tbody id="tabela-eventos-body">
           </tbody>
         </table>
+
         <script>
-          const http = new XMLHttpRequest();
-          const url = 'http://luismijias.bootcamp.dev.netuno.org:20190/services/eventos';
-          http.onreadystatechange = function() {
-            if (this.readyState == 4) {
-              console.log('Foi no BACKEND e VOLTOU');
-              console.warn('Resposta do BACKEND:', this.responseText)
-              const eventos = JSON.parse(this.responseText);
-              console.warn('Resposta do BACKEND em JSON', eventos);
-              let html = '';
-              for (const {evento, categoria, data, hora} of eventos) { 
-                console.log(evento + '===' + categoria);
-                console.log(evento + '===' + categoria + '=' + data + '=' + hora);
-                html += `
+          window.setTimeout(() => carregaTabelaProdutos(), 3000);
+          const carregaTabelaProdutos = () => {
+  processaBackend(
+    'http://luismijias.bootcamp.dev.netuno.org:20190/services/eventos',
+    function(dados) {
+      let html = '';
+      for (const {evento, categoria, data, hora} of dados) { 
+        console.log(evento + '===' + categoria + '=' + data + '=' + hora);
+        html += `
                   <tr>
                     <td>${evento}</td>
                     <td>${data}</td>
@@ -60,15 +58,39 @@
                     <td>${categoria}</td>
                   </tr> 
                 `;
-              }
-              document.getElementById('tabela-eventos-body').innerHTML = html;
-            }
-          };
-          console.log(' CHAMA O BACKEND !!!');
-          http.open("GET", url, true);
-          http.send();
-          console.log('EVIOU');
+      }
+      document.getElementById('tabela-eventos-body').innerHTML = html;
+    }
+  );
+};
         </script>
+      </section>
+      
+      <section>
+        <p>Criar Evento</p>
+        <div>
+          <form>
+            <div>
+              <label>Nome</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Data</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Hora</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Categoria</label>
+              <input type="text" />
+            </div>
+            <div>
+              <button type="submit" onClick="criarEvento()">Enviar</button>
+            </div>
+          </form> 
+        </div>
       </section>
     </main>
     <footer>
