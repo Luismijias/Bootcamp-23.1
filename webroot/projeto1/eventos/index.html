@@ -36,7 +36,7 @@
               <th>Estilo</th>
             </tr>
           </thead>
-          <tbody id="tabela-produtos-body">
+          <tbody id="tabela-eventos-body">
           </tbody>
         </table>
         <script>
@@ -48,10 +48,20 @@
               console.warn('Resposta do BACKEND:', this.responseText)
               const eventos = JSON.parse(this.responseText);
               console.warn('Resposta do BACKEND em JSON', eventos);
+              let html = '';
               for (const {evento, categoria, data, hora} of eventos) { 
                 console.log(evento + '===' + categoria);
                 console.log(evento + '===' + categoria + '=' + data + '=' + hora);
+                html += `
+                  <tr>
+                    <td>${evento}</td>
+                    <td>${data}</td>
+                    <td>${hora}</td>
+                    <td>${categoria}</td>
+                  </tr> 
+                `;
               }
+              document.getElementById('tabela-eventos-body').innerHTML = html;
             }
           };
           console.log(' CHAMA O BACKEND !!!');
@@ -66,4 +76,3 @@
     </footer>
   </body>
 </html>
-
