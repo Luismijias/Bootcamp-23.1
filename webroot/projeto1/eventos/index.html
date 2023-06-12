@@ -44,11 +44,20 @@
           const url = 'http://luismijias.bootcamp.dev.netuno.org:20190/services/eventos';
           http.onreadystatechange = function() {
             if (this.readyState == 4) {
-          console.log('Foi no BACKEND e VOLTOU');
+              console.log('Foi no BACKEND e VOLTOU');
+              console.warn('Resposta do BACKEND:', this.responseText)
+              const eventos = JSON.parse(this.responseText);
+              console.warn('Resposta do BACKEND em JSON', eventos);
+              for (const {evento, categoria, data, hora} of eventos) { 
+                console.log(evento + '===' + categoria);
+                console.log(evento + '===' + categoria + '=' + data + '=' + hora);
+              }
             }
           };
+          console.log(' CHAMA O BACKEND !!!');
           http.open("GET", url, true);
-http.send();
+          http.send();
+          console.log('EVIOU');
         </script>
       </section>
     </main>

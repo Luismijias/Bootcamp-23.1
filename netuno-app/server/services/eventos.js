@@ -14,6 +14,8 @@ for (const dbEvento of dbEventos) {
  eventos.add(
    _val.map()
    .set('evento',dbEvento.getString('evento_nome'))
+   .set('data',dbEvento.getString('evento_data'))
+   .set('hora',dbEvento.getString('evento_hora'))
    .set('categoria',dbEvento.getString('categoria_nome'))
  )
 }
