@@ -42,8 +42,8 @@
         </table>
 
         <script>
-          window.setTimeout(() => carregaTabelaProdutos(), 3000);
-          const carregaTabelaProdutos = () => {
+          window.setTimeout(() => carregaTabelaEventos(), 100);
+          const carregaTabelaEventos = () => {
   processaBackend(
     'http://luismijias.bootcamp.dev.netuno.org:20190/services/eventos',
     function(dados) {
@@ -69,27 +69,30 @@
       <section>
         <p>Criar Evento</p>
         <div>
-          <form>
+          <form target="evento-salvado" action="http://luismijias.bootcamp.dev.netuno.org:20190/services/evento-salvar">
             <div>
               <label>Nome</label>
-              <input type="text" />
+              <input name="nome" type="text" />
             </div>
             <div>
               <label>Data</label>
-              <input type="text" />
+              <input name="data" type="text" />
             </div>
             <div>
               <label>Hora</label>
-              <input type="text" />
+              <input name="hora" type="text" />
             </div>
             <div>
               <label>Categoria</label>
-              <input type="text" />
+              <input name="categoria" type="text" />
             </div>
             <div>
-              <button type="submit" onClick="criarEvento()">Enviar</button>
+              <button type="submit"> Cria Evento </button>
+              <button type="button" onClick="criarEvento()">Envia com  click</button>
             </div>
           </form> 
+          <iframe name="evento-salvado" onload="carregaTabelaEventos()"></iframe>
+        
         </div>
       </section>
     </main>
