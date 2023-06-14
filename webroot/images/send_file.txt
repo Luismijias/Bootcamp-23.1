@@ -3,3 +3,6 @@ Do servidor para a maquina :scp -P 20122 luismijias@135.181.217.178:~/caminho/do
 
 
 Da maquina para o servidor--> scp -P 20122 seu_arquivo.png luismijias@135.181.217.178:~/webroot/images
+
+
+Dica! se quiser enviar vários arquivos crie um diretório somente com os arquivos que deseja enviar e ultize "*" no lugar de "seu_arquivo.png"
