@@ -1,5 +1,5 @@
-const nome = _req.getString('nome')
-const numeroPagina = _req.getInt('numeroPagina', 1)
+const nome = _req.getValues('filtro', _val.map()).getString('nome')
+const numeroPagina = _req.getValues('pagina', _val.map()).getInt('numero', 1)
 
 const PAGE_SIZE = 2 
 const SELECT = 'uid, nome, data, hora, folheto'
