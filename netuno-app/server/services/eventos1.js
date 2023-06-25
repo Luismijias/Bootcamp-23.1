@@ -1,11 +1,11 @@
 const dbEventos = _db.query(`
 SELECT
-  evento.nome AS "evento_nome",
-  evento.data AS "evento_data",
-  evento.hora AS "evento_hora",
-  categoria.nome AS "categoria_nome"
-  FROM evento
-    INNER JOIN categoria ON evento.categoria_id = categoria.id
+  evento1.nome AS "evento_nome",
+  evento1.data AS "evento_data",
+  evento1.hora AS "evento_hora",
+  categoria1.nome AS "categoria_nome"
+  FROM evento1
+    INNER JOIN categoria1 ON evento1.categoria_id = categoria1.id
     `)
 
 const eventos = _val.list()
