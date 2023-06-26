@@ -3,9 +3,11 @@ const data = _req.getString('data')
 const hora = _req.getString('hora')
 
 _db.insert(
-  'estado',
+  'evento',
   _val.map()
     .set('nome', nome)
+    .set('data', data)
+    .set('hora', hora)
 )
 
 _out.json({
