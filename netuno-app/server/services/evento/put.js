@@ -2,6 +2,11 @@ const dbEvento = _db.get('evento', _req.getString('uid'))
 
 if (!dbEvento) {
   _header.status(404)
+  _out.json(
+    _val.map()
+    .set('erro', true)
+    .set('mensagem', 'registro-nao-encontrado')
+  )
   _exec.stop()
 }
 
@@ -14,3 +19,8 @@ _db.update(
   .set("hora", _req.getString('hora'))
 )
 
+
+_out.json(
+  _val.map()
+  .set("resultado", true)
+)
