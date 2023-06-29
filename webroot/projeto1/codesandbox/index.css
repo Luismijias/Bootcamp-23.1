@@ -1,0 +1,159 @@
+:root{
+  --primary-color: #0ab285;
+  --secundary-color: #0c8e69;
+  --tertiary-color: #4f7f6e;
+  --font-color: #000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: var(--secundary-color);
+  width: 100vw;
+  height: 93.6px;
+}
+.header__pages{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1024px;
+  margin: auto;
+  text-align: right;
+}
+.header__pages div{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+main{
+ max-width: 1024px;
+ margin: auto;
+}
+table {
+  width: 100%;
+  margin:auto;
+}
+td {
+  font-size: 2rem;
+  background-color: var(--tertiary-color);
+}
+sup{ 
+  background-color: var(--tertiary-color);
+}
+body {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+img {
+}
+.img__logo {
+  background-color: var(--secundary-color);
+  height:60px;
+  width: 60px;
+}
+h1 {
+  color: var(--font-color);
+  color: var(--font-color);
+  margin: 20px;
+}
+form {
+  display: block;
+  position: relative;
+}
+.form div{
+  display: block;
+  align-items: right;
+}
+.form form div{
+  display: flex;
+  justify-content: space-between;
+}
+button{
+  border-radius:10px;
+  width:60px;
+  height:25px;
+}
+p {
+  text-align: center;
+  color: #var(--font-color);
+  margin-bottom: 20px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.a__logo {
+  font-size: 20px;
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+  grid-gap: 2px 0px;
+  margin: 5px 0px 0px 0px;
+  text-align: left;
+}
+.header__pages a{
+  font-size: 1.4rem;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 2.5rem;
+  text-align: center;
+}
+footer h6{
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+h1 {
+    margin-left: 20vw;
+    font-size: 3rem;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  body{
+  }
+  header{
+    height: 230px;
+  }
+  .a__logo{
+    text-align: center;
+    margin-left: 5vw;
+    margin-bottom: 30px;
+  }
+  .img__logo{
+margin-left: 6vw;
+}
+  .header__pages {
+    padding-right: 10vw;
+  }
+  main table{
+    width: 81vw;
+  }
+  header div div a{
+    font-weight: bold;
+  }
+  .header__pages a{
+    font-size: 2rem;
+    margin-top: 60px;
+  }
+main div table {
+  width: 100%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+}
+}
+
+@media (max-width: 780px) {
+.header__pages a {
+  font-size: 1.5rem;
+}
+}
+
+
+
