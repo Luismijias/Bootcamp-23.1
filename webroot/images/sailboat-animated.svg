@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-500 -600 600 800" width="600" height="600" style="display: block; margin: 0;  background-color: none; ">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-500 -520 600 800" width="600" height="600" style="display: block; margin: 0;  background-color: none; ">
   <style>
     .boat {
       animation: float 8s ease-in-out infinite;
