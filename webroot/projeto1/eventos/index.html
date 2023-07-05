@@ -9,18 +9,18 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="../index.html">
-          <img src="/images/logo.png" width="150" />
-        </a>
+      <div class="layout">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="/images/logo.png"/>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html" class="active">HOME</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="../eventos1/index.html">EVENTOS_1</a></li>
-          <li><a href="../eventos_old/index.html">OLD_EVENTOS</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
       <section>
@@ -28,7 +28,7 @@
           <h1>Eventos</h1>
         </div>
       </section>
-      <section>
+      <section class="center">
         <table class="tabela-eventos">
           <thead>
             <tr>
@@ -41,10 +41,9 @@
           <tbody id="tabela-eventos-body">
           </tbody>
         </table>
-
         <script>
           window.setTimeout(() => carregaTabelaEventos(), 100);
-          const carregaTabelaEventos = () => {
+const carregaTabelaEventos = () => {
   processaBackend(
     'http://luismijias.bootcamp.dev.netuno.org:20190/services/eventos1',
     function(dados) {
@@ -66,9 +65,8 @@
 };
         </script>
       </section>
-      
+      <br/>
       <section>
-        <p>Criar Evento</p>
         <div>
           <form target="evento-salvado" action="http://luismijias.bootcamp.dev.netuno.org:20190/services/evento1-salvar">
             <div>
@@ -93,12 +91,8 @@
             </div>
           </form> 
           <iframe name="evento-salvado" onload="carregaTabelaEventos()"></iframe>
-        
         </div>
       </section>
     </main>
-    <footer>
-      Luis Mijias, &copy; 2023.
-    </footer>
   </body>
 </html>

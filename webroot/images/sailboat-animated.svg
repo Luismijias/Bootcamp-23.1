@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-500 -520 600 800" width="600" height="600" style="display: block; margin: 0;  background-color: none; ">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-565 -620 600 670" width="500" height="100%" style="display: block; margin: 0;  background-color: none; ">
   <style>
     .boat {
       animation: float 8s ease-in-out infinite;
@@ -14,7 +14,7 @@
     }
   </style>
   
-  <rect x="0" y="0" width="1000" height="300" fill="none"/> <!-- Oceano -->
+  <rect x="50" y="50" width="300" height="300" fill="none"/> <!-- Oceano -->
 
   <g class="boat">
     <!-- Barco Vela -->
@@ -336,7 +336,7 @@ c11 -7 -4 -8 -49 -4 -36 4 -69 11 -75 16 -13 13 101 2 124 -12z m2168 14 c-3
 -10 -6 0 -11 5 -11 10 0 6 2 10 4 10 3 0 8 -4 11 -10z m735 0 c0 -12 -24 -12
 -60 0 -21 7 -19 8 18 9 23 1 42 -3 42 -9z" 
 opacity="0.05"
-transform="scale(0.04) rotate(177)"
+transform="scale(0.048) rotate(177)"
 />
     </g>
 </svg>
