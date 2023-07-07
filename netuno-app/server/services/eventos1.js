@@ -1,17 +1,20 @@
-const dbEventos = _db.query(`
+//_exec.sleep(2000)
+
+const dbEventos1 = _db.query(`
+
 SELECT
   evento1.nome AS "evento_nome",
   evento1.data AS "evento_data",
   evento1.hora AS "evento_hora",
-  categoria1.nome AS "categoria_nome"
+  categoria.nome AS "categoria_nome"
   FROM evento1
-    INNER JOIN categoria1 ON evento1.categoria_id = categoria1.id
+    INNER JOIN categoria ON evento1.categoria_id = categoria.id
     `)
 
-const eventos = _val.list()
+const eventos1 = _val.list()
 
-for (const dbEvento of dbEventos) {
- eventos.add(
+for (const dbEvento of dbEventos1) {
+ eventos1.add(
    _val.map()
    .set('evento',dbEvento.getString('evento_nome'))
    .set('data',dbEvento.getString('evento_data'))
@@ -20,4 +23,4 @@ for (const dbEvento of dbEventos) {
  )
 }
 
-_out.json (eventos)
+_out.json (eventos1)
