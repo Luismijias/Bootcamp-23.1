@@ -34,6 +34,8 @@
             <tr>
               <th>Nome</th>
               <th>Estilo</th>
+              <th>Data</th>
+              <th>Hora</th>
             </tr>
           </thead>
           <tbody id="tabela-eventos-body">
@@ -52,6 +54,8 @@ const carregaTabelaEventos = () => {
                   <tr>
                     <td>${evento}</td>
                     <td>${categoria}</td>
+                  <td>${data}</td>
+                  <td>${hora}</td>
                   </tr> 
                 `;
       }
@@ -62,12 +66,18 @@ const carregaTabelaEventos = () => {
         </script>
       </section>
       <br/>
-      <section>
+      <section class="criaEvento1">
         <div>
-          <form target="evento-salvado" action="http://luismijias.bootcamp.dev.netuno.org:20190/services/evento1-salvar">
-            <div>
+          <form target="evento-salvado" action="http://luismijias.bootcamp.dev.netuno.org:20190/services/evento1/evento1-salvar">
+            <div class="evento1">
               <label>Nome</label>
               <input name="nome" type="text" />
+              <label>Data</label>
+              <input name="data" type="text" />
+              <label>Hora</label>
+              <input name="hora" type="text" />
+              <label>Categoria</label>
+              <input name="categoria" type="text" />
             </div>
             <p>Categoria Funk</p> 
             <div>

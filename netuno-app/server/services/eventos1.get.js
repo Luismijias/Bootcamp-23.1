@@ -6,9 +6,8 @@ SELECT
   evento1.nome AS "evento_nome",
   evento1.data AS "evento_data",
   evento1.hora AS "evento_hora",
-  categoria.nome AS "categoria_nome"
+  evento1.categoria AS "categoria_nome"
   FROM evento1
-    INNER JOIN categoria ON evento1.categoria_id = categoria.id
     `)
 
 const eventos1 = _val.list()

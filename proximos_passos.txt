@@ -1,4 +1,2 @@
 
-no footer remover o face e insta na responsividade
-centralizar o copy right
 acertar o header da página codesandbox.
